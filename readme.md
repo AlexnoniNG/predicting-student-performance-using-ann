@@ -29,7 +29,7 @@ A Python project that trains an ANN on student data to predict final grades (G3)
 1. **Clone or unzip the repository**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/AlexnoniNG/predicting-student-performance-using-ann.git
 cd predicting-student-performance-ann
 ```
 
@@ -131,7 +131,7 @@ preds   = model.predict(X_new)
 - **Evaluation metrics**
   Beyond MSE, compute RMSE or R² on your held-out test set:
 
-```python
+```pyth
 from sklearn.metrics import mean_squared_error, r2_score
 y_pred = model.predict(X_test)
 rmse   = mean_squared_error(y_test, y_pred, squared=False)
